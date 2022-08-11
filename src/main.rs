@@ -1,5 +1,5 @@
 use anyhow::Result;
-use clap::Arg;
+use clap::Parser;
 
 use {{crate_name}}::{start, utils, ToolArgs};
 
@@ -9,7 +9,7 @@ fn main() -> anyhow::Result<()> {
     init_telemetry_from_verbose(args.verbose)?;
 
     // Parse arguments and start your tool here
-    start();
+    start(args);
     Ok(())
 }
 
