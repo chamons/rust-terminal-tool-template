@@ -1,8 +1,9 @@
+use clap::Parser;
 use tracing::log;
 
 pub mod utils;
 
-#[derive(Parser)]
+#[derive(Parser, Debug)]
 #[clap(author, version, about, long_about = None)]
 pub struct ToolArgs {
     /// Print additional information (pass argument one to four times for increasing detail)
