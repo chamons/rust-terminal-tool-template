@@ -1,7 +1,7 @@
 use anyhow::Result;
 use clap::Arg;
 
-use terminal_template::{start, utils};
+use {{crate_name}}::{start, utils};
 
 fn main() -> anyhow::Result<()> {
     let m = clap::command!()
