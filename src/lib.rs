@@ -11,7 +11,7 @@ pub struct ToolArgs {
     pub verbose: u8,
 }
 
-#[tracing::instrument]
+#[tracing::instrument(skip(args))]
 pub fn start(args: ToolArgs) {
     println!("Hello, world!");
 
